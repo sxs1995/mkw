@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>慕课网(IMOOC)-国内最大的IT技能学习平台</title>
+    <link rel="stylesheet" href="../css/mk.css"/>
+    <link rel="stylesheet" href="../font/iconfont.css"/>
+    <script src="../mkw.js"></script>
+
+</head>
+<body>
+<div id="click_back">
+    <div id="sign">
+        <div id="s_top">
+           <ul>
+               <li style="color: red;border-bottom:1px solid red ">登录</li>
+               <li>注册</li>
+               <a href="javascript:"> <div class="close" id="close">
+                   <!--<img src="../img/nlogin.png" alt=""/>-->
+               </div></a>
+           </ul>
+        </div>
+        <div class="login">
+            <div class="form">
+            <!--<form action="" method="">-->
+                <div class="username">
+                    <!--div 图标-->
+                    <input  type="text" name="username" placeholder="请输入登录邮箱/手机号"/>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" placeholder="6-16位密码,区分大小写,不能用空格"/>
+                </div>
+                <div class="other">
+                    <div class="remember">
+                        <input type="checkbox" name="remember"/> 下次自动登录
+                    </div>
+
+                    <div class="trouble">
+                        <a href="http://www.imooc.com/user/newforgot">忘记密码</a>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#">登录</a>
+                </div>
+                <div class="qita">
+                    其他形式登录
+                </div>
+            <!--</form>-->
+        </div>
+        </div>
+    </div>
+</div>
+<div class="back"></div>
+<div class="toolbar">
+    <a href=""><span class="iconfont" style="font-size: 16px;">&#xe60f;</span></a>
+    <a href=""><span class="iconfont" style="font-size: 24px">&#xe71c;</span>
+        <div class="shouji"></div></a>
+    <a href=""><span class="iconfont" style="font-size: 20px">&#xe65c;</span>
+        <div class="weixin"></div></a>
+    <a href="#top"  id="gotop"> > </a>
+</div>
+<header class="nav" id="top">
+        <div class="logo"><a href=""><img src="../img/logo.png" alt=""/></a></div>
+            <ul class="ul1">
+                <li><a href="shizhan.html">实战</a></li>
+                <li><a href="">路径</a></li>
+                <li><a href="">猿问</a></li>
+                <li><a href="">手记</a></li>
+            </ul>
+        <div class="login">
+            <ul>
+                <li><a href="">注册</a></li>
+                <li ><a href="javascript:" id="denglu">登录</a></li>
+                <li class="li_ma"><span class="iconfont" >&#xe71c;</span>
+                    <div class="erweima1">
+                        <img src="../img/erweima.png" alt=""/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search_text">
+                <input type="text" placeholder="请输入想搜索的内容..." class="search_text1"/>
+            </div>
+            <div class="search_pic">
+                <span class="iconfont" >&#xe610;</span>
+            </div>
+        </div>
+    </header>
+<section>
+    <div id="carousel">
+        <div id="inner" class="clear">
+            <img src="../img/bk1.jpg" alt=""/>
+            <img src="../img/38.jpg" alt="" />
+            <img src="../img/39.jpg" alt="" />
+            <img src="../img/40.jpg" alt=""/>
+            <img src="../img/bk1.jpg" alt=""/>
+        </div>
+        <div class="paganation" id="paganation">
+            <span class ="selected"><a href="" style="position: absolute;left: 1010px">1</a></span>
+            <span ><a href="" style="position: absolute;left: 1010px">2</a></span>
+            <span><a href="" style="position: absolute;left: 1010px">3</a></span>
+            <span><a href="" style="position: absolute;left: 1010px">4</a></span>
+        </div>
+        <div id="lun_left" class="arrow"><img src="../img/pre.png" alt=""/></div>
+        <div id="lun_right" class="arrow"><img src="../img/pre.png" alt=""/></div>
+        <div class="leftLi">
+            <ul>
+                <li class="li1" ><a href="" class="la">前端开发 <span> > </span></a>
+                    <div class="leftLi_box box1">
+                        <h4>分类目录</h4>
+                        <span class="span span1">基础 :</span>
+                        <span class="span span2" style="margin-left: 10px"><a href="">HTML/CSS</a> / <a href="">JavaScript</a> / <a href="">jQuery</a></span>
+                        <br/>
+                        <span class="span span1">进阶 :</span>
+                        <span class="span span2" style="margin-left: 10px"><a href="">Html5</a> / <a href="">CSS3</a> / <a href="">Node.js</a>
+                            / <a href="">AngularJS</a> / <a href="">Bootstrap</a>/ <a href="">React</a>
+                            / <a href="">Sass/Less</a>/ <a href="">Vue.js</a>/ <a href="">WebApp</a></span><br/>
+                        <span class="span span1">其它 :</span>
+                        <span class="span span2" style="margin-left: 10px"><a href="">前端工具</a></span>
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | Canvas玩儿转红包照片</a></p>
+                        <p><a href="">课程 | 重拾CSS的乐趣</a></p>
+                        <p><a href="">课程 | DOM探索之基础详解篇</a></p>
+                    </div>
+                </li>
+                <li class="li2"><a href="" class="la">后端开发 <span> > </span></a>
+                    <div class="leftLi_box box2">
+                        <h4>分类目录</h4>
+                        <span class="span span2" ><a href="">PHP</a> / <a href="">Java</a> / <a href="">python</a>
+                            / <a href="">C</a> / <a href="">C++</a> / <a href="">Go</a> / <a href="">C#</a> / </span>
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | Java 分页原理与实践（上）</a></p>
+                        <p><a href="">课程 | 解密JAVA实现Excel导入导出</a></p>
+                        <p><a href="">课程 | 版本管理工具介绍---SVN篇</a></p>
+                    </div>
+                </li>
+                <li class="li3"><a href="" class="la">移动开发<span> > </span></a>
+                    <div class="leftLi_box box3">
+                        <h4>分类目录</h4>
+                        <span class="span span2"><a href="">Android</a> / <a href="">iOS</a> /
+                            <a href="">Unity 3D</a> / <a href="">Cocos2d-x</a> /</span>
+                        <br/>
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | Android中的WebView实战详解</a></p>
+                        <p><a href="">课程 | 一起来做价值百万的Apple Watch App：分歧终端机</a></p>
+                        <p><a href="">课程 | Android猜歌游戏是这样炼成的</a></p>
+                    </div>
+                </li>
+                <li class="li4"><a href="" class="la">数据库 <span> > </span></a>
+                    <div class="leftLi_box box4">
+                        <h4>分类目录</h4>
+                        <span class="span span2"><a href="">MySQL</a> / <a href="">MongoDB</a> /
+                            <a href="">Oracle</a> / <a href="">SQL Server</a> /</span>
+
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | MySQL开发技巧（二）</a></p>
+                        <p><a href="">课程 | 性能优化之MySQL优化</a></p>
+                        <p><a href="">课程 | 2015 Oracle技术嘉年华</a></p>
+                    </div>
+                </li>
+                <li class="li5"><a href="" class="la">云计算&大数据 <span> > </span></a>
+                    <div class="leftLi_box box5">
+                        <h4>分类目录</h4>
+                        <span class="span span2"><a href="">大数据</a> / <a href="">云计算</a> / </span>
+
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | 云计算 - 引领阿里生态的技术发展之路</a></p>
+                        <p><a href="">课程 | openstack最新技术解析</a></p>
+                        <p><a href="">课程 | 阿里云助力弹性伸缩服务</a></p>
+                    </div>
+                </li>
+                <li class="li6"><a href="" class="la">运维&测试 <span> > </span></a>
+                    <div class="leftLi_box box6">
+                        <h4>分类目录</h4>
+
+                        <span class="span span2"><a href="">测试</a> / <a href="">Linux</a> / </span>
+
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | shell编程之条件判断与流程控制</a></p>
+                        <p><a href="">课程 | Linux权限管理之基本权限</a></p>
+                        <p><a href="">课程 | Linux智能DNS服务搭建之Bind服务</a></p>
+                    </div>
+                </li>
+                <li class="li7"><a href="" style="border: none" class="la">视觉设计<span> > </span></a>
+                    <div class="leftLi_box box7">
+                        <h4>分类目录</h4>
+                        <span class="span span2"><a href="">Photoshop</a> / <a href="">Maya</a> /
+                            <a href="">Premiere</a> / <a href="">ZBrush</a> / </span>
+                        <br/>
+                        <h4>推荐</h4>
+                        <p><a href="">课程 | Oeasy教你玩转后期剪辑Premiere</a></p>
+                        <p><a href="">课程 | PS入门基础-魔幻调色</a></p>
+                        <p><a href="">课程 | Pscc全面技能培训</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sztj">
+        <span>实战推荐</span><span class="span2"><a href="">更多 ></a></span>
+        <div class="wrap">
+            <div class="pic " style="margin-left:0 ">
+                <div class="tu">
+                    <img src="../img/1.jpg" alt=""/>
+                    <div class="intro" >
+                        <h3>7天搞定Node.js微信公众号开发</h3>
+                        <p>用Koa框架、ES2015新特性及Mongo DB数据库，开发微信公众号。</p>
+                    </div>
+                </div>
+                <div class="pic_bottom" >
+                    <span class="l" >￥199.00</span>
+                    <span class="r">843人在学</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class="tu">
+                    <img src="../img/2.jpg" alt=""/>
+                    <div class="intro" >
+                        <h3>前端到后台ThinkPHP开发整站</h3>
+                        <p>用PHP+MySQL+Ajax，页面静态化.数据库备份技术实现你“小全栈”梦想。</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l" >￥128.00</span>
+                    <span class="r">1355人在学</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class="tu">
+                    <img src="../img/3.jpg" alt=""/>
+                    <div class="intro" >
+                        <h3>Yii2.0全力出击打造完整电商平台</h3>
+                        <p>完整电商业务流程详解、企业级实战开发环境，购物、下单、支付、收货......各功能模块逐一开发，打造一个京东模式电商平台</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l" >￥268.00</span>
+                    <span class="r">327人在学</span>
+                </div>
+            </div>
+            <div class="pic">
+                <div class="tu">
+                    <img src="../img/4.jpg" alt=""/>
+                    <div class="intro" >
+                        <h3>飞速上手的跨平台App开发</h3>
+                        <p> 最具潜力的HTML5移动App开发框架Ionic，天然的跨平台属性，通吃Android及iOS，简洁、易用，让你飞速上手</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l" >￥78.00</span>
+                    <span class="r">1264人在学</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class="tu">
+                    <img src="../img/5.jpg" alt=""/>
+                    <div class="intro">
+                        <h3>打造扛得住的MySQL数据库架构</h3>
+                        <p>面面俱到讲解影响MySQL性能的各个因素，让你将MySQL架构了然于胸。</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l" >￥88.00</span>
+                    <span class="r">738人在学</span>
+                </div >
+            </div>
+        </div>
+    </div>
+    <div class="mfhk">
+        <span>免费好课</span><span class="span2"><a href="">更多 ></a></span>
+        <div class="wrap">
+            <div class="pic " style="margin-left:0 ">
+                <div class="tu">
+                    <img src="../img/6.jpg" alt=""/>
+                    <div class="intro" onmouseover="cover()">
+                        <h3><span class="span3">初</span>HTML+CSS基础课程</h3>
+                        <p>8小时带领大家步步深入学习标签的基础知识，掌握各种样式的基本用法。</p>
+                    </div>
+                </div>
+                <div class="pic_bottom" onmouseover="cover()">
+
+                    <span class="l">464373人在学</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class="tu">
+                    <img src="../img/7.jpg" alt=""/>
+                    <div class="intro" onmouseover="cover()">
+                        <h3><span class="span3">初</span>JavaScript入门篇</h3>
+                        <p>做为一名Web攻城狮的必备技术，让您从糊涂到明白，快速认识JavaScript。</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">316830人在学</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class="tu">
+                    <img src="../img/8.jpg" alt=""/>
+                    <div class="intro" onmouseover="cover()">
+                        <h3><span class="span3">初</span>Java入门第一季</h3>
+                        <p>完整电商业务流程详解、企业级实战开发环境，购物、下单、支付、收货......各功能模块逐一开发，打造一个京东模式电商平台</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">438972人在学</span>
+                </div>
+            </div>
+            <div class="pic">
+                <div class="tu">
+                    <img src="../img/9.jpg" alt=""/>
+                    <div class="intro" onmouseover="cover()">
+                        <h3><span class="span3">初</span>PHP入门篇</h3>
+                        <p> 最具潜力的HTML5移动App开发框架Ionic，天然的跨平台属性，通吃Android及iOS，简洁、易用，让你飞速上手</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">226703人在学</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class="tu">
+                    <img src="../img/10.jpg" alt=""/>
+                    <div class="intro">
+                        <h3><span class="span3">初</span>Android攻城狮的第一门课（入门篇）</h3>
+                        <p>面面俱到讲解影响MySQL性能的各个因素，让你将MySQL架构了然于胸。</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">198567人在学</span>
+                </div >
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+        <div class="left">
+            <h2>Web <br/>前端工程师</h2>
+            <span><a href="">职业路径 <span class="item">></span></a></span>
+            <p><a href="">Web前端工程师成长第一阶段(基础篇)</a></p>
+            <p><a href="">响应式布局那些事</a></p>
+            <p><a href="">高德开发者必由之路——JS API篇</a></p>
+        </div>
+        <div class="content">
+            <div class="c_left">
+                <a href=""><div class="l_top">
+                    <p>快速上手：jQuery源码探索之旅</p>
+                </div></a>
+                <a href=""><div class="l_bottom">
+                    <p>HTML5 移动Web App阅读器</p>
+                </div></a>
+            </div>
+            <div class="c_right">
+                <div class="r_top ">
+                    <div class="tu">
+                        <img src="../img/11.jpg" alt=""/>
+                        <div class="intro">
+                            <h3><span class="span3">高</span>CSS深入理解之z-index</h3>
+                            <p> CSS技术大牛深入理解系列又一力作！</p>
+                        </div>
+                    </div>
+                    <div class="pic_bottom">
+                        <span class="l">20028人在学</span>
+                    </div>
+                </div>
+                <div class="r_bottom">
+                    <div class="tu">
+                        <img src="../img/12.jpg" alt=""/>
+                        <div class="intro">
+                            <h3><span class="span3">中</span> 信息滚动效果制作</h3>
+                            <p>萌妹子带您快速学习滚动效果</p>
+                        </div>
+                    </div>
+                    <div class="pic_bottom">
+                        <span class="l">30130人在学</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="r_top">
+                <div class="r_top ">
+                    <div class="tu">
+                        <img src="../img/web2.jpg" alt=""/>
+                        <div class="intro">
+                            <h3><span class="span3">高</span>CSS深入理解之z-index</h3>
+                            <p> CSS技术大牛深入理解系列又一力作！</p>
+                        </div>
+                    </div>
+                    <div class="pic_bottom">
+                        <span class="l">23818人在学</span>
+                        <div class="list">
+                            <ul style="list-style: square">
+                                <li><a href="">QQ空间时光轴特效</a></li>
+                                <li><a href="">CSS3实现漂亮ToolTips效果</a></li>
+                                <li><a href="">jQuery插件—Validation Plugin</a></li>
+                                <li><a href="">基于bootstrap的网页开发</a></li>
+                                <li><a href="">Sass进阶篇</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="container1">
+            <div class="left1">
+                <h2>Java <br/>工程师</h2>
+                <span><a href="">职业路径 <span class="item">></span></a></span>
+                <p><a href="">模式宗师养成宝典之Java版</a></p>
+                <p><a href="">搞定Java加解密</a></p>
+                <p><a href="">Hibernate开发宝典</a></p>
+            </div>
+            <div class="content1">
+                <a href=""><div class="c1_top">
+                   <p>全面攻克：Java SSM三个流行框架</p>
+                </div></a>
+                <div class="c1_bottom">
+                    <div class="c1_1 ">
+                        <div class="tu">
+                            <img src="../img/20.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">高</span>模式的秘密---适配器模式</h3>
+                                <p>适配器教你如何“到什么山唱什么歌” </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">18535人在学</span>
+                        </div>
+                    </div>
+                    <div class="c1_2 ">
+                        <div class="tu">
+                            <img src="../img/21.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>Java眼中的XML---文件读取</h3>
+                                <p>通过Java认识并且创造XML文件 </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">46464人在学</span>
+                        </div>
+                    </div>
+                    <div class="c1_3 ">
+                        <div class="tu">
+                            <img src="../img/22.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>Java实现验证码制作</h3>
+                                <p>各种样式的验证码的实现方法。 </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">35188人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right1">
+                <div class="r_top">
+                    <div class="r_top ">
+                        <div class="tu">
+                            <img src="../img/13.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span> 文件传输基础——Java IO流</h3>
+                                <p> 通过大量的案例为您介绍IO流的使用。</p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">65775人在学</span>
+                            <div class="list">
+                                <ul style="list-style: square">
+                                    <li><a href="">Java实现消息摘要算法加密</a></li>
+                                    <li><a href="">Struts2入门</a></li>
+                                    <li><a href="">Hibernate初探之多对多映射</a></li>
+                                    <li><a href="">Hibernate缓存策略</a></li>
+                                    <li><a href="">Java高并发秒杀API之web层</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="left2">
+                <h2>PHP<br/>工程师</h2>
+                <span><a href="">职业路径 <span class="item">></span></a></span>
+                <p><a href="">PHP开发工程师闯关记--初识PHP</a></p>
+                <p><a href="">从零开始学习ThinkPHP框架</a></p>
+                <p><a href="">带你玩转Yii框架</a></p>
+            </div>
+            <div class="content2">
+                <a href=""><div class="c_left">
+                    <a href="" style="display: block">
+                        <p class="title">PHP开发工程师闯关记--初识PHP</p>
+                        <div class="line"></div>
+                        <div class="text">
+                            快速掌握PHP的基础知识、面向对象等…
+                        </div>
+                    </a>
+                </div></a>
+                <div class="c_right">
+                    <div class="r_top ">
+                        <div class="tu">
+                            <img src="../img/28.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>揭秘PHP模糊查询技术</h3>
+                                <p>PHP模糊查询分析与实现！ </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">15619人在学</span>
+                        </div>
+                    </div>
+                    <div class="r_bottom">
+                        <div class="tu">
+                            <img src="../img/29.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>PHP与MySQL关系大揭秘</h3>
+                                <p>让我们一起走上探秘之旅，找寻php和mysql恋爱的真谛  </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">46446人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right2">
+                <div class="r_top">
+                    <div class="r_top ">
+                        <div class="tu">
+                            <img src="../img/30.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span> MVC架构模式分析与设计</h3>
+                                <p>由浅入深带您实现人生第一个MVC框架</p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">49383人在学</span>
+                            <div class="list">
+                                <ul style="list-style: square">
+                                    <li><a href="">Duang~MySQLi扩展库来袭</a></li>
+                                    <li><a href="">PHP实现手机归属地查询</a></li>
+                                    <li><a href="">Ajax技术在购物车中的应用（PHP篇）</a></li>
+                                    <li><a href="">PHP第三方登录—微博登录</a></li>
+                                    <li><a href="">轻松学会Laravel-基础篇</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="left3">
+                <h2>Android<br/>工程师</h2>
+                <span><a href="">职业路径 <span class="item">></span></a></span>
+                <p><a href="">从0开始学习制作QQ侧滑菜单</a></p>
+                <p><a href="">Android加薪利器--自定义View</a></p>
+                <p><a href="">Android-微信热门功能合集</a></p>
+            </div>
+            <div class="content3">
+                <a href=""><div class="c1_top">
+                    <p>必备：从0开始学习制作QQ侧滑菜单</p>
+                </div></a>
+                <div class="c1_bottom">
+                    <div class="c1_1 ">
+                        <div class="tu">
+                            <img src="../img/24.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">初</span>与Android Studio的第一次亲密接触</h3>
+                                <p>Google亲儿子AndroidStudio即将上位  </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">69570人在学</span>
+                        </div>
+                    </div>
+                    <div class="c1_2 ">
+                        <div class="tu">
+                            <img src="../img/25.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>百度地图在Android中的使用</h3>
+                                <p>在Android应用中玩转百度地图  </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">28853人在学</span>
+                        </div>
+                    </div>
+                    <div class="c1_3 ">
+                        <div class="tu">
+                            <img src="../img/26.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>Activity进阶三部曲（第三部）</h3>
+                                <p>待添加 </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">0人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right3">
+                <div class="r_top">
+                    <div class="r_top ">
+                        <div class="tu">
+                            <img src="../img/27.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">高</span>Android系统Root原理初探</h3>
+                                <p> 大神教你Root的基本技术和刷机</p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">25910人在学</span>
+                            <div class="list">
+                                <ul style="list-style: square">
+                                    <li><a href="">Activity进阶三部曲（第二部）</a></li>
+                                    <li><a href="">明日之星-RecyclerView</a></li>
+                                    <li><a href="">Android-仿微信图片选择器</a></li>
+                                    <li><a href="">Android-心愿分享</a></li>
+                                    <li><a href="">快速实现不一样的移动拼图</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container4">
+            <div class="left4">
+                <h2>ios<br/>工程师</h2>
+                <span><a href="">为果粉而生</a></span>
+                <p style="margin-top: 160px"><a href="">Swift加薪利器-iOS动画特辑</a></p>
+                <p><a href="">iOS苹果表开发攻略</a></p>
+            </div>
+            <div class="content4">
+                <div class="c_left">
+                    <a href=""><div class="l_top">
+                        <p>玩儿转Swift 2.0(第二季)</p>
+                    </div></a>
+                    <a href=""><div class="l_bottom">
+                        <p>Swift加薪利器-iOS动画特辑</p>
+                    </div></a>
+                </div>
+                <div class="c_right">
+                    <div class="r_top ">
+                        <div class="tu">
+                            <img src="../img/16.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">中</span>iOS-动画进阶</h3>
+                                <p>iOS动画特效进阶篇 </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">15297人在学</span>
+                        </div>
+                    </div>
+                    <div class="r_bottom">
+                        <div class="tu">
+                            <img src="../img/17.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">高</span> iOS动画案例之会跳舞的界面(上)</h3>
+                                <p>想让你的界面跳舞吗？ </p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">17496人在学</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right4">
+                <div class="r_top">
+                    <div class="r_top ">
+                        <div class="tu">
+                            <img src="../img/18.jpg" alt=""/>
+                            <div class="intro">
+                                <h3><span class="span3">初</span>iOS-动画入门</h3>
+                                <p> 后IOS时代 扁平化设计，你值得拥有</p>
+                            </div>
+                        </div>
+                        <div class="pic_bottom">
+                            <span class="l">29637人在学</span>
+                            <div class="list">
+                                <ul style="list-style: square">
+                                    <li><a href="">iOS9新特性之画中画Multitasking</a></li>
+                                    <li><a href="">iOS-健康App系列之我走了多远</a></li>
+                                    <li><a href="">iOS9新特性之Metal</a></li>
+                                    <li><a href="">iOS-五子棋大战</a></li>
+                                    <li><a href="">玩儿转Swift 2.0（第三季）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container5">
+            <div class="c5_1 ">
+                <div class="tu">
+                    <h2>Linux<br/>运维工程师</h2>
+                    <span><a href="">职业路径 <span class="item">></span></a></span>
+                </div>
+            </div>
+            <div class="c5_2 ">
+                <div class="tu">
+                    <img src="../img/32.jpg" alt=""/>
+                    <div class="intro">
+                        <h3><span class="span3">初</span>Linux达人养成计划 I</h3>
+                        <p>Linux的入门级课程！ </p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">179693人在学</span>
+                </div>
+            </div>
+            <div class="c5_3 ">
+                <div class="tu">
+                    <img src="../img/33.jpg" alt=""/>
+                    <div class="intro">
+                        <h3><span class="span3">中</span>shell编程之环境变量配置文件</h3>
+                        <p>为你带来shell环境变量配置文件！ </p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">16359人在学</span>
+                </div>
+            </div>
+            <div class="c5_4 ">
+                <div class="tu">
+                    <img src="../img/34.jpg" alt=""/>
+                    <div class="intro">
+                        <h3><span class="span3">高</span>用iptables搭建一套强大的安全防护盾</h3>
+                        <p>如果你不关注安全，请忽略 iptables!</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">18712人在学</span>
+                </div>
+            </div>
+            <div class="c5_5 ">
+                <div class="tu">
+                    <img src="../img/35.jpg" alt=""/>
+                    <div class="intro">
+                        <h3><span class="span3">中</span>Linux权限管理之特殊权限</h3>
+                        <p>Linux中的常用权限命令！</p>
+                    </div>
+                </div>
+                <div class="pic_bottom">
+                    <span class="l">18111人在学</span>
+                </div>
+            </div>
+        </div>
+        <div class="container6">
+            <div class="left6">
+                <h2>手记&猿问</h2>
+                <span>IT知识和答疑，想要的都在这</span>
+                <a href="">
+                    <div class="btn" style="margin-top: 125px;">手记</div>
+                    <div class="btn">猿问</div>
+                    <div class="btn">积分商城</div>
+                </a>
+            </div>
+            <div class="content6">
+                <a href="">
+                    <div class="l_top">
+                        <p>4 年前端狗，2 年 CTO</p>
+                    </div>
+                </a>
+                <div class="l_bottom">
+                    <div class="bt_left">热门手记</div>
+                    <div class="bt_right">
+                        <a href="">成长路径：送给准备入行的同学! </a> <br/>
+                        <a href="">扒出并移植ThinkPHP自带"上传类"秒懂"驱动"</a> <br/>
+                        <a href="">css3 伪类：hover 特性小探索 </a> <br/>
+                        <a href="">前端面试的基本工作要求（赶紧收藏） </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right6">
+                <a href="">
+                    <div class="r_top">
+                        <p>哦，对啦，慕课网2017年积分不清零~</p>
+                    </div>
+                </a>
+                <div class="r_bottom">
+                    <div class="rbt_left">猿问推荐</div>
+                    <div class="rbt_right">
+                        <a href="">关于点击事件 getElementById（）</a> <br/>
+                        <a href="">c语言的结构体是不是和java的类是类似的</a> <br/>
+                        <a href="">事件点击for循环时的匿名函数问题 </a> <br/>
+                        <a href="">如何使用原生的方法获取div下的li </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="foot_top">
+        <a href="" class="a a1" title="新浪微博"></a>
+        <a href="" class="a a2" title="微信">
+            <div class="erweima2">
+                <img src="../img/idx-btm.png" alt=""/>
+            </div>
+        </a>
+        <a href="" class="a a3" title="腾讯微博"></a>
+        <a href="" class="a a4" title="QQ空间"></a>
+
+    </div>
+    <div class="foot_list">
+        <ul>
+            <li><a href="">关于我们</a></li>
+            <li><a href="">企业合作</a></li>
+            <li><a href="">人才招聘</a></li>
+            <li><a href="">讲师招募</a></li>
+            <li><a href="">联系我们</a></li>
+            <li><a href="">意见反馈</a></li>
+            <li><a href="">友情链接</a></li>
+        </ul>
+    </div>
+    <div class="foot_bottom">
+        <p>© 2016 imooc.com  京ICP备13046642号</p>
+    </div>
+</footer>
+</body>
+</html>
