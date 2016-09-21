@@ -1,0 +1,472 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+font{
+  font-weight: normal;
+  font-size: 16px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+body{
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.back {
+  width: 100%;
+  height: 490px;
+  position: absolute;
+  top: 50px;
+  background-image: url(../img/bk.jpg);
+  z-index: -1;
+}
+.nav{
+  height: 60px;
+  margin: 0 auto;
+  background: black;
+  .logo{
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .ul1{
+    float: left;
+    margin-left: 25px;
+    li{
+      float: left;
+      line-height: 60px;
+      height: 60px;
+      a{
+        font-size: 14px;
+        width: 80px;
+        color: white;
+        display: block;
+        text-align: center;
+      }
+    }
+    li:hover{
+      background: #5e5e5e;
+    }
+  }
+  .login{
+    float: right;
+    margin-right: 28px;
+    li{
+      float: right;
+      line-height: 60px;
+      height: 60px;
+      font-size: 14px;
+      display: block;
+      width: 58px;
+      text-align: center;
+      .erweima1{
+        position: absolute;
+        top: 66px;
+        right: 30px;
+        display: none;
+        z-index: 99999;
+      }
+      span{
+        font-weight: bold;
+        font-size: 18px;
+        color: #787d82;
+        display: block;
+      }
+      span:hover{
+        color: red;
+        cursor: pointer;
+      }
+      a{
+        color: #787d82;
+      }
+      a:hover{
+        color: red;
+      }
+    }
+    .li_ma:hover .erweima1{
+      display: block;
+    }
+  }
+  .search{
+    float: right;
+    height: 38px;
+    width: 240px;
+    margin-right: 18px;
+    line-height: 60px;
+    border-bottom: 1px solid #d9dde1;
+    padding-bottom:10px ;
+   color: white;
+    .search_text{
+      float: left;
+      width: 220px;
+    }
+    .search_text1{
+      padding: 5px 10px;
+      border: none;
+      background: none;
+    }
+    .search_pic{
+      span:hover{
+        color: red;
+        cursor: pointer;
+      }
+    }
+  }
+}
+section{
+  .banner{
+    width: 1200px;
+    height: 500px;
+    background: red;
+    margin: 36px auto  0;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    .left_pic{
+      float: left;
+      width: 880px;
+      overflow: hidden;
+    }
+    a{
+      margin-top: -5px;
+    }
+    a::before {
+      width: 80px;
+      height: 550px;
+      top: -100px;
+      left: -150px;
+    }
+    a:hover::before {
+      -webkit-transition: left .8s;
+      -moz-transition: left .8s;
+      transition: left .8s;
+      left: 480px;
+      overflow: hidden;
+    }
+    a,.right_pic{
+      position: relative;
+      float: left;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .right_pic{
+      margin-top: 5px;
+    }
+    a:before{
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+      -webkit-transform: skewX(-25deg);
+      -moz-transform: skewX(-25deg);
+    }
+  }
+  //首发课程
+  .title{
+    clear: both;
+    width: 100%;
+    height: 125px;
+    //background: saddlebrown;
+    h1{
+      font-size: 36px;
+      color: #4d555d;
+      text-align: center;
+      font-weight: bold;
+      line-height: 125px;
+    }
+  }
+  .main{
+    //background: red;
+    width: 1200px;
+    margin: 0 auto;
+    //height: 1111px;
+    .main1,.main2,.main3,.main4{
+      height: 272px;
+      div{
+        width: 360px;
+        height: 278px;
+        float: left;
+        transition: all .4s ease;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+        .m_top{
+          width: 100%;
+          height: 202px;
+          overflow: hidden;
+        }
+        .m_bottom{
+          height: 160px;
+          background: url("../img/trans_bg.png") no-repeat top center;
+          position: relative;
+          top: -84px;
+          width: 360px;
+          h2{
+            font-size: 20px;
+            font-weight: bold;
+            color: #07111b;
+            line-height: 32px;
+            margin-top: 24px;
+            margin-bottom: 0;
+            text-align: left;
+            padding-left: 30px;
+          }
+          p{
+            margin-top: 12px;
+            line-height: 24px;
+            color: #93999f;
+            font-size: 12px;
+            display: none;
+            word-wrap: break-word;
+            word-break: break-all;
+            padding:0 30px;
+          }
+        }
+        .bottom_date{
+          height: 76px;
+          position: relative;
+          bottom:160px;
+          width: 100%;
+          //padding-left: 30px;
+          box-shadow: none;
+          background: white;
+          .span1{
+            display:inline-block;
+            margin-left: 30px;
+            line-height: 80px;
+            font-size: 16px;
+            color: #f01414;
+          }
+          .span2{
+            font-size: 12px;
+            color: #93999f;
+            margin-left: 170px;
+            //line-height: 50px;
+          }
+        }
+      }
+      div:hover{
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+        .m_bottom{
+          position: relative;
+          top: -144px;
+          p{
+            display: block;
+          }
+        }
+        .bottom_date{
+          box-shadow: none;
+        }
+      }
+      .div2,.div3{
+        margin-left: 60px;
+      }
+    }
+    .main2,.main3,.main4{
+      margin-top: 60px;
+    }
+  }
+  //教师
+  .teacher{
+    margin-top: 120px;
+    clear: both;
+    height: 560px;
+    background: url(../img/cover_02.jpg) no-repeat ;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+    //box-sizing: content-box;
+    .teacher_title{
+      h2{
+        text-align: center;
+        color: #ffffff;
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 80px;
+        font-weight: bold;
+      }
+      p{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 20px;
+      }
+    }
+    .teacher_bottom{
+      width: 1200px;
+      height: 213px;
+      padding-left: 75px;
+      margin-top: 50px;
+      ul{
+        width: 100%;
+        li{
+          width: 300px;
+          float: left;
+          //display: block;
+          position: relative;
+          overflow: hidden;
+          transition: all .4s ease;
+
+          img{
+            border-radius: 50%;
+            margin:0 80px;
+          }
+          h3,p{
+            text-align: center;
+            color: white;
+          }
+          h3{
+            font-size: 24px;
+            line-height: 24px;
+            margin-top: 16px;
+          }
+          p{
+            font-size: 14px;
+            margin-top: 12px;
+          }
+         span{
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 24px;
+            text-align: left;
+            margin-top: 24px;
+            padding: 0 20px;
+            display: none;
+          }
+        }
+        a:hover li{
+          position: relative;
+          top: -90px;
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  //轮播
+  .index{
+    width: 100%;
+    background: #f3f5f7;
+    height: 560px;
+    overflow: hidden;
+    .index_main{
+      width: auto;
+      max-width: 1200px;
+      position: relative;
+      //background: red;
+      margin-left: 75px;
+      h2{
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #07111b;
+        line-height: 36px;
+        margin-top: 80px;
+      }
+      p{
+        text-align: center;
+        font-size: 14px;
+        color: #4d555d;
+        line-height: 24px;
+        margin-top: 20px;
+      }
+    }
+  }
+  //footer
+  #footer{
+    background: #000000;
+    border-top: 1px solid #e2e4e6;
+    font-size: 12px;
+    color: #787d82;
+    height: 100px;
+    #f_left{
+     width: 60%;
+     height: 100%;
+     //background: red;
+      float: left;
+     font-size: 12px;
+     color: #c8cdd2;;
+     ul{
+     padding-top: 30px ;
+       margin-left: 110px;
+       li{
+         float: left;
+         margin-right: 30px;
+         a{
+           color: rgba(255,255,255,.7);
+         }
+         a:hover{
+           color: white;
+         }
+       }
+     }
+     p{
+       margin-left: 110px;
+       margin-top: 10px;
+       color: #787d82;
+     }
+   }
+    #f_right{
+      width: 40%;
+      //background: green;
+      height: 100%;
+      float: left;
+      ul{
+        width: 163px;
+        height: 35px;
+        //background: bisque;
+        margin-top: 30px;
+        margin-left: 270px;
+        padding-left: 30px;
+        li{
+          float: left;
+          width: 32px;
+          height: 32px;
+          //background: red;
+          margin: 0 6px 0;
+          opacity: 0.5;
+          transition: opacity 0.2s;
+        }
+        .li1{
+          background: url("../img/footer-sprite.png")no-repeat;
+          background-position: 0 -279px;
+          .weixin{
+            width: 172px;
+            height: 220px;
+            //background: red;
+            overflow: hidden;
+            position: absolute;
+            top: 3043px;
+            right: 132px;
+            display: none;
+          }
+        }
+        .li2{
+          background: url("../img/footer-sprite.png")no-repeat;
+          background-position: 0 -321px;
+        }
+        .li3{
+          background: url("../img/footer-sprite.png")no-repeat;
+          background-position: 0 -363px;
+        }
+        li:hover{
+          opacity: 1;
+        }
+        .li1:hover{
+          .weixin{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

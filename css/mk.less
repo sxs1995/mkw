@@ -1,0 +1,3056 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+font{
+  font-weight: normal;
+  font-size: 16px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+}
+.back {
+   width: 100%;
+   height: 490px;
+   position: absolute;
+   top: 0;
+   background-image: url(../img/bk.jpg);
+  background-repeat: no-repeat;
+   z-index: -1;
+ }
+#click_back{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  #sign{
+    position: fixed;
+    background: #fff;
+    z-index: 100000;
+    width: 320px;
+    height: 335px;
+    //padding-bottom: 30px;
+    padding:0 20px 30px;
+    left: 50%;
+    top: 50%;
+    margin: -218px 0 0 -180px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    #s_top{
+      height: 50px;
+      //background: red;
+      border-bottom: 1px solid #d9dde1;
+      li{
+        float: left;
+        width: 80px;
+        line-height: 50px;
+        display: block;
+        text-align: center;
+      }
+      .close{
+        float: right;
+        width: 20px;
+        height: 20px;
+        //background: red;
+        overflow: hidden;
+        background: url("../img/nlogin.png");
+        margin-top: 20px;
+
+      }
+      .close:hover{
+        background-position: 0 -21px;
+        transform: scale(1.3,1.3);
+        //transition: all .3s;
+      }
+    }
+
+    .login{
+      width: 320px;
+      height: 300px;
+      //border: 1px solid gainsboro;
+      .form{
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+        .username input{
+          width: 300px;
+          height: 40px;
+          margin-top: 30px;
+        }
+        .password input{
+          width: 100%;
+          height: 40px;
+          margin-top: 10px;
+        }
+        .other{
+          width: 100%;
+          height: 40px;
+          margin-top: 20px;
+          font-size: 14px;
+          .remember{
+            float: left;
+            width: 150px;
+          }
+          .trouble{
+            float: right;
+            width: 90px;
+          }
+          .trouble a{
+            display: block;
+            width: 100%;
+            height: 30px;
+            text-align: right;
+            color: #787d82;
+          }
+          a:hover{
+            color: red;
+          }
+        }
+        .btn{
+          width: 100%;
+          height: 30px;
+          a{
+            display: block;
+            width: 100%;
+            height: 50px;
+
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            background: red;
+          }
+          a:hover{
+            background: rgba(255,0,0,0.6);
+          }
+        }
+        .qita{
+          height: 30px;
+          margin-top: 50px;
+          font-size: 14px;
+          color: rgb(102, 102, 102);
+        }
+      }
+    }
+  }
+}
+.toolbar{
+  position: fixed;
+  padding: 0 15px;
+  bottom: 120px;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
+  a{
+    display: block;
+    width: 26px;
+    height: 25px;
+    padding: 12px 0;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #787d82;
+    text-align: center;
+    border-bottom: 1px solid #edf1f2;
+    .weixin,.shouji{
+      position: absolute;
+      width: 172px;
+      right: 52px;
+      transition: opacity 0.25s, transform .3s;
+      opacity: 0;
+      transform-origin: 95% 95%;
+      transform: scale(0.01);
+      //max-width: 0;
+      background: url("../img/elevator.png");
+    }
+    .weixin{
+      height: 212px;
+      bottom: -9px;
+    }
+    .shouji{
+      height: 200px;
+      bottom: -15px;
+      background-position: 0 -220px ;
+
+    }
+  }
+  #gotop{
+    transform: rotate(-90deg);
+    font-size: 20px;
+  }
+  a:hover {
+    color: black;
+    .weixin{
+    opacity: 1;
+    transform: scale(1);
+    }
+    .shouji{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+.nav{
+  width: 1360px;
+  height: 80px;
+  margin: 0 auto;
+  clear: both;
+  //background: green;
+  .logo{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .ul1{
+    float: left;
+    li{
+      float: left;
+      font-size: 16px;
+      margin-left: 35px;
+      line-height: 80px;
+      height: 80px;
+      //display: block;
+      a{
+        color: black;
+        display: block;
+        width: 35px;
+        text-align: center;
+      }
+      a:hover{
+        color: red;
+      }
+    }
+  }
+  .login{
+    float: right;
+    margin-right: 28px;
+    li{
+      float: right;
+      line-height: 80px;
+      height: 80px;
+      font-size: 14px;
+      display: block;
+      width: 58px;
+      text-align: center;
+      .erweima1{
+        position: absolute;
+        top: 66px;
+        right: 30px;
+        display: none;
+        z-index: 99999;
+      }
+      span{
+        font-weight: bold;
+        font-size: 18px;
+        color: #787d82;
+        display: block;
+
+      }
+      span:hover{
+        color: red;
+        cursor: pointer;
+      }
+      a{
+        color: #787d82;
+      }
+      a:hover{
+        color: red;
+      }
+    }
+
+    .li_ma:hover .erweima1{
+      display: block;
+    }
+  }
+  .search{
+    float: right;
+    height: 38px;
+    width: 240px;
+    margin-right: 18px;
+    line-height: 80px;
+    border-bottom: 1px solid #d9dde1;
+    padding-bottom:20px ;
+    .search_text{
+      float: left;
+      width: 220px;
+    }
+    .search_text1{
+      padding: 5px 10px;
+      border: none;
+      background: none;
+    }
+    .search_pic{
+      span:hover{
+        color: red;
+        cursor: pointer;
+      }
+    }
+  }
+}
+section{
+  .clear:after{
+    overflow:hidden;
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+  }
+  #carousel{
+    cursor: pointer;
+    height: 460px;
+    width: 1200px;
+    margin-left: 75px;
+    position:relative;
+    overflow: hidden;
+    #inner{
+      width: 1000%;
+      height:100%;
+      position:absolute;
+      left:0;
+      top:0;
+      img{
+        width:10%;
+        float: left;
+      }
+    }
+    .paganation{
+      width: 100%;
+      position: absolute;
+      bottom:10px;
+      margin-left: 1083px;
+      span{
+        overflow: hidden;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 8px;
+        background-color: rgba(7,17,27,.4);
+        transition: transform .2s;
+        cursor: pointer;
+        box-shadow: 0 0 0 2px rgba(255,255,255,.8) inset;
+      }
+      .selected{
+        background: white;
+        color:black;
+      }
+    }
+    .arrow {
+      position: absolute;
+      top: 180px;
+      width: 40px;
+      height: 80px;
+      cursor: pointer;
+    }
+    #lun_left{
+      left: 245px;
+      img{
+        transform:rotate(-180deg);
+        margin: 25px 10px ;
+      }
+    }
+    #lun_right{
+      right: 0;
+      img{
+        margin: 25px 13px ;
+      }
+    }
+    .arrow:hover{
+      background: rgba(0,0,0,0.5);
+
+    }
+    .leftLi{
+      background:rgba(0,0,0,0.3);
+      width: 245px;
+      position: absolute;
+      //top: 80px;
+      //left: 75px;
+      ul{
+        height: 448px;
+        width: 245px;
+        padding: 6px 0;
+        li{
+          padding: 0 30px;
+          .la{
+            height: 63px;
+            line-height: 63px;
+            color: white;
+            border-bottom: 1px solid rgba(255,255,255,.2);
+            display:block;
+            span{
+              position: absolute;
+              left: 195px;
+              color: #eee;
+            }
+          }
+          &:hover{
+            background: rgba(0,0,0,0.3);
+          }
+        }
+        .leftLi_box{
+          width: 692px;
+          height: 0;
+          position: absolute;
+          z-index: 999;
+          left:245px;
+          top:0;
+          padding-left: 40px;
+          overflow: hidden;
+          h4{
+            color: red;
+            margin-bottom: 15px;
+            padding-top: 34px;
+          }
+          span{
+            font-size: 14px;
+            margin-top: 6px;
+          }
+          .span1{
+            font-weight: bold;
+            display: inline-block;
+          }
+          .span2{
+            color: #787d82;
+            margin-left: -10px;
+            padding-right: 100px;
+            //display: inline-block;
+            a{
+              display: inline-block;
+              margin:6px 10px;
+              color: black;
+            }
+          }
+          p{
+            a{
+              color: black;
+              display: inline-block;
+              margin-top: 11px;
+              font-size: 14px;
+            }
+          }
+          a:hover{
+            color: red;
+          }
+        }
+        .box1{
+          background: url("../img/leftli%201.png");
+        }
+        .box2{
+          background:url("../img/be.png");
+        }
+        .box3{
+          background:url("../img/mobile.png");
+        }
+        .box4{
+          background:url("../img/data.png");
+        }
+        .box5{
+          background:url("../img/yjs.png");
+        }
+        .box6{
+          background:url("../img/yw.png");
+        }
+        .box7{
+          background:url("../img/be.png");
+        }
+        li:hover .leftLi_box{
+          height: 460px;
+        }
+      }
+    }
+  }
+
+  .sztj {
+    width: 1200px;
+    height: 230px;
+    padding-top: 40px;
+    margin-left: 75px;
+    .span2 {
+      margin-left: 1090px;
+      font-size: 14px;
+      a {
+        color: #333333;
+        &:hover {
+          color: #787d82;
+        }
+      }
+    }
+    .wrap {
+      width: 1200px;
+      height: 172px;
+      //background: aqua;
+      .pic {
+        box-shadow: 0 0  10px rgba(0,0,0,0.2);
+        cursor: pointer;
+        margin-left: 17px;
+        margin-top: 27px;
+        width: 224px;
+        height: 172px;
+        background: white;
+        overflow: hidden;
+        float: left;
+        border: 1px solid #d9dde1;
+        display: block;
+        .tu {
+          height: 130px;
+          overflow: hidden;
+          .intro {
+            box-sizing: border-box;
+            position: relative;
+            padding: 0 20px 0 18px;
+            transition: top .5s;
+            top: -40px;
+            overflow: hidden;
+            height: 144px;
+            width: 100%;
+            background-image: url(../img/bg-course.png);
+            h3 {
+              margin: 0;
+              padding: 18px 0 6px;
+              font-size: 15px;
+              max-height: 40px;
+              overflow: hidden;
+              color: #07111b;
+              line-height: 21px;
+            }
+            p {
+              font-size: 12px;
+              //padding: 0 -2px 4px;
+              color: #787d82;
+            }
+          }
+        }
+        .pic_bottom {
+          //position: absolute;
+          //padding: 0 20px;
+          //bottom: 0;
+          //box-sizing: border-box;
+          width: 100%;
+          height: 42px;
+          z-index: 999;
+          background-color: #fff;
+          color: #93999f;
+          font-size: 12px;
+          line-height: 36px;
+          //box-shadow: 30px;
+          .l {
+            color: red;
+            margin-left: 23px;
+          }
+          .r {
+            margin-left: 73px;
+          }
+        }
+      }
+      .pic:hover .intro {
+        top: -90px;
+        position: relative;
+      }
+      .pic:hover{
+        box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .mfhk {
+    width: 1200px;
+    height: 230px;
+    padding-top: 40px;
+    margin-left: 75px;
+    .span2 {
+      margin-left: 1090px;
+      font-size: 14px;
+      a {
+        color: #333333;
+        &:hover {
+          color: #787d82;
+        }
+      }
+    }
+    .wrap {
+      width: 1200px;
+      height: 172px;
+      //background: aqua;
+      .pic {
+        box-shadow: 0 0  10px rgba(0,0,0,0.2);
+        cursor: pointer;
+        margin-left: 17px;
+        margin-top: 27px;
+        width: 224px;
+        height: 172px;
+        background: white;
+        overflow: hidden;
+        float: left;
+        border: 1px solid #d9dde1;
+        display: block;
+        .tu {
+          height: 130px;
+          overflow: hidden;
+          .intro {
+            box-sizing: border-box;
+            position: relative;
+            padding: 0 20px 0 18px;
+            transition: top .5s;
+            top: -40px;
+            overflow: hidden;
+            height: 144px;
+            width: 100%;
+            background-image: url(../img/bg-course.png);
+            h3 {
+              margin: 0;
+              padding: 18px 0 6px;
+              font-size: 15px;
+              max-height: 40px;
+              overflow: hidden;
+              color: #07111b;
+              line-height: 21px;
+              .span3{
+                float: left;
+                margin-top: 2px;
+                margin-right: 4px;
+                padding: 2px;
+                font-size: 12px;
+                color: #fff;
+                line-height: 12px;
+                border-radius: 1px;
+                background-color: #93999f;
+              }
+            }
+            p {
+              font-size: 12px;
+              //padding: 0 -2px 4px;
+              color: #787d82;
+            }
+          }
+        }
+        .pic_bottom {
+          //position: absolute;
+          //padding: 0 20px;
+          //bottom: 0;
+          //box-sizing: border-box;
+          width: 100%;
+          height: 42px;
+          z-index: 999;
+          background-color: #fff;
+          color: #93999f;
+          font-size: 12px;
+          line-height: 36px;
+          //box-shadow: 30px;
+          .l {
+            //color: red;
+            margin-left: 23px;
+          }
+
+        }
+      }
+      .pic:hover .intro {
+        top: -90px;
+        position: relative;
+      }
+      .pic:hover{
+        box-shadow: 0 0  25px rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .main{
+    width: 100%;
+    height: 2770px;
+    background: #f3f5f7;
+    margin-top: 40px;
+    .container{
+      clear: both;
+      width: 1200px;
+      height: 364px;
+      display:flex;
+      padding-left: 75px;
+      padding-top: 50px;
+      .left{
+        width: 225px;
+        background: url("../img/Web1.png")no-repeat;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          //margin-left: 20px;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        p{
+          display: block;
+          margin-top: 0;
+          font-size: 12px;
+          line-height: 28px;
+          color: #fff;
+          width: 184px;
+          height: 28px;
+          overflow: hidden;
+          a{
+            color: #c03;
+          }
+          a:hover{
+            color: red;
+          }
+        }
+        span{
+          font-size: 16px;
+          line-height: 16px;
+          display: block;
+          margin-top: 20px ;
+          margin-bottom: 52px;
+          font-weight: bold;
+          .item{
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          a{
+            color: #fff;
+          }
+          a:hover .item{
+            margin-left: 5px;
+          }
+        }
+      }
+      .right{
+        width: 228px;
+        .r_top {
+          box-shadow: 0 0  10px rgba(0,0,0,0.2);
+          cursor: pointer;
+          //margin-left: 17px;
+          //margin-top: 27px;
+          width: 224px;
+          //height: 172px;
+          background: white;
+          overflow: hidden;
+          //border: 1px solid #d9dde1;
+          display: block;
+          .tu {
+            height: 130px;
+            overflow: hidden;
+            .intro {
+              box-sizing: border-box;
+              position: relative;
+              padding: 0 20px 0 18px;
+              transition: top .5s;
+              top: -40px;
+              overflow: hidden;
+              height: 144px;
+              width: 100%;
+              background-image: url(../img/bg-course.png);
+              h3 {
+                margin: 0;
+                padding: 18px 0 6px;
+                font-size: 15px;
+                max-height: 40px;
+                overflow: hidden;
+                color: #07111b;
+                line-height: 21px;
+                .span3{
+                  float: left;
+                  margin-top: 2px;
+                  margin-right: 4px;
+                  padding: 2px;
+                  font-size: 12px;
+                  color: #fff;
+                  line-height: 12px;
+                  border-radius: 1px;
+                  background-color: #93999f;
+                }
+              }
+              p {
+                font-size: 12px;
+                //padding: 0 -2px 4px;
+                color: #787d82;
+              }
+            }
+          }
+          .pic_bottom {
+            width: 100%;
+            height: 234px;
+            z-index: 999;
+            background-color: #fff;
+            color: #93999f;
+            font-size: 12px;
+            line-height: 36px;
+            //box-shadow: 30px;
+            .l {
+              //color: red;
+              margin-left: 23px;
+            }
+            .list{
+              padding-top: 11px;
+              border-top: 1px solid #d9dde1;
+              font-size: 12px;
+              line-height: 30px;
+              width: 184px;
+              margin: auto;
+              //position: relative;
+              padding-left: 15px;
+              background: #fff;
+              a{
+                color: #07111b;
+                display: block;
+              }
+              a:hover{
+                color: red;
+              }
+            }
+          }
+        }
+        .r_top:hover .intro {
+          top: -90px;
+          position: relative;
+        }
+        .r_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+
+      }
+      .content{
+        //background: greenyellow;
+        width: 727px;
+        .c_left{
+          width: 468px;
+          height: 366px;
+          float: left;
+          .l_top{
+            height: 172px;
+          background: url("../img/w1.jpg")no-repeat;
+          }
+          .l_top:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .l_bottom{
+            height: 172px;
+            margin-top: 20px;
+            background: url("../img/w2.jpg")no-repeat;
+          }
+          .l_bottom:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          p{
+            line-height: 172px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+          }
+        }
+        .c_right{
+          .r_top {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .r_top:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .r_top:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .r_bottom {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            //margin-left: 17px;
+            margin-top: 17px;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              //position: absolute;
+              //padding: 0 20px;
+              //bottom: 0;
+              //box-sizing: border-box;
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .r_bottom:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .r_bottom:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+    .container1{
+      width: 1200px;
+      height: 364px;
+      display:flex;
+      padding-left: 75px;
+      padding-top: 50px;
+      .left1{
+        width: 225px;
+        background: url("../img/Java.png")no-repeat;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          //margin-left: 20px;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        p{
+          display: block;
+          margin-top: 0;
+          font-size: 12px;
+          line-height: 28px;
+          color: #fff;
+          width: 184px;
+          height: 28px;
+          overflow: hidden;
+          a{
+            color: #069;;
+            display: block;
+          }
+          a:hover{
+            color: blue;
+          }
+        }
+        span{
+          font-size: 16px;
+          line-height: 16px;
+          display: block;
+          margin-top: 20px ;
+          margin-bottom: 52px;
+          font-weight: bold;
+          .item{
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          a{
+            color: #fff;
+          }
+          a:hover .item{
+            margin-left: 5px;
+          }
+        }
+      }
+      .right1{
+        width: 228px;
+        margin-left: 17px;
+        .r_top {
+          box-shadow: 0 0  10px rgba(0,0,0,0.2);
+          cursor: pointer;
+          //margin-left: 17px;
+          //margin-top: 27px;
+          width: 224px;
+          //height: 172px;
+          background: white;
+          overflow: hidden;
+          //border: 1px solid #d9dde1;
+          display: block;
+          .tu {
+            height: 130px;
+            overflow: hidden;
+            .intro {
+              box-sizing: border-box;
+              position: relative;
+              padding: 0 20px 0 18px;
+              transition: top .5s;
+              top: -40px;
+              overflow: hidden;
+              height: 144px;
+              width: 100%;
+              background-image: url(../img/bg-course.png);
+              h3 {
+                margin: 0;
+                padding: 18px 0 6px;
+                font-size: 15px;
+                max-height: 40px;
+                overflow: hidden;
+                color: #07111b;
+                line-height: 21px;
+                .span3{
+                  float: left;
+                  margin-top: 2px;
+                  margin-right: 4px;
+                  padding: 2px;
+                  font-size: 12px;
+                  color: #fff;
+                  line-height: 12px;
+                  border-radius: 1px;
+                  background-color: #93999f;
+                }
+              }
+              p {
+                font-size: 12px;
+                //padding: 0 -2px 4px;
+                color: #787d82;
+              }
+            }
+          }
+          .pic_bottom {
+            width: 100%;
+            height: 234px;
+            z-index: 999;
+            background-color: #fff;
+            color: #93999f;
+            font-size: 12px;
+            line-height: 36px;
+            //box-shadow: 30px;
+            .l {
+              //color: red;
+              margin-left: 23px;
+            }
+            .list{
+              padding-top: 11px;
+              border-top: 1px solid #d9dde1;
+              font-size: 12px;
+              line-height: 30px;
+              width: 184px;
+              margin: auto;
+              //position: relative;
+              padding-left: 15px;
+              background: #fff;
+              a{
+                color: #07111b;
+                display: block;
+              }
+              a:hover{
+                color: red;
+              }
+            }
+          }
+        }
+        .r_top:hover .intro {
+          top: -90px;
+          position: relative;
+        }
+        .r_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+      }
+      .content1{
+        width: 712px;
+        //background: saddlebrown;
+        .c1_top{
+          background: url("../img/19.jpg")no-repeat;
+          width: 712px;
+          height: 172px;
+          p{
+            text-align: center;
+            line-height: 172px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+          }
+        }
+        .c1_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+        .c1_bottom{
+          margin-top: 18px;
+          .c1_1 {
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              .l {
+                margin-left: 23px;
+              }
+            }
+          }
+          .c1_1:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .c1_1:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .c1_2 {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .c1_2:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .c1_2:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .c1_3 {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .c1_3:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .c1_3:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+    .container2{
+      width: 1200px;
+      height: 364px;
+      display:flex;
+      padding-left: 75px;
+      padding-top: 50px;
+      .left2{
+        width: 225px;
+        background: url("../img/PHP.png")no-repeat;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          //margin-left: 20px;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        p{
+          display: block;
+          margin-top: 0;
+          font-size: 12px;
+          line-height: 28px;
+          color: #fff;
+          width: 184px;
+          height: 28px;
+          overflow: hidden;
+          a{
+            color: #339;
+            display: block;
+          }
+          a:hover{
+            color: mediumblue;
+          }
+        }
+        span{
+          font-size: 16px;
+          line-height: 16px;
+          display: block;
+          margin-top: 20px ;
+          margin-bottom: 52px;
+          font-weight: bold;
+          .item{
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          a{
+            color: #fff;
+          }
+          a:hover .item{
+            margin-left: 5px;
+          }
+        }
+      }
+      .right2{
+        width: 228px;
+        .r_top {
+          box-shadow: 0 0  10px rgba(0,0,0,0.2);
+          cursor: pointer;
+          //margin-left: 17px;
+          //margin-top: 27px;
+          width: 224px;
+          //height: 172px;
+          background: white;
+          overflow: hidden;
+          //border: 1px solid #d9dde1;
+          display: block;
+          .tu {
+            height: 130px;
+            overflow: hidden;
+            .intro {
+              box-sizing: border-box;
+              position: relative;
+              padding: 0 20px 0 18px;
+              transition: top .5s;
+              top: -40px;
+              overflow: hidden;
+              height: 144px;
+              width: 100%;
+              background-image: url(../img/bg-course.png);
+              h3 {
+                margin: 0;
+                padding: 18px 0 6px;
+                font-size: 15px;
+                max-height: 40px;
+                overflow: hidden;
+                color: #07111b;
+                line-height: 21px;
+                .span3{
+                  float: left;
+                  margin-top: 2px;
+                  margin-right: 4px;
+                  padding: 2px;
+                  font-size: 12px;
+                  color: #fff;
+                  line-height: 12px;
+                  border-radius: 1px;
+                  background-color: #93999f;
+                }
+              }
+              p {
+                font-size: 12px;
+                //padding: 0 -2px 4px;
+                color: #787d82;
+              }
+            }
+          }
+          .pic_bottom {
+            width: 100%;
+            height: 234px;
+            z-index: 999;
+            background-color: #fff;
+            color: #93999f;
+            font-size: 12px;
+            line-height: 36px;
+            //box-shadow: 30px;
+            .l {
+              //color: red;
+              margin-left: 23px;
+            }
+            .list{
+              padding-top: 11px;
+              border-top: 1px solid #d9dde1;
+              font-size: 12px;
+              line-height: 30px;
+              width: 184px;
+              margin: auto;
+              //position: relative;
+              padding-left: 15px;
+              background: #fff;
+
+              a{
+                color: #07111b;
+                display: block;
+              }
+              a:hover{
+                color: red;
+              }
+            }
+          }
+        }
+        .r_top:hover .intro {
+          top: -90px;
+          position: relative;
+        }
+        .r_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+
+      }
+      .content2{
+        //background: greenyellow;
+        width: 727px;
+        .c_left{
+          width: 468px;
+          height: 364px;
+          float: left;
+          background: url("../img/31.jpg");
+          .title{
+            line-height: 20px;
+            margin-top: 124px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 700;
+          }
+          .line{
+            background-color: #fff;
+            opacity: .502;
+            height: 1px;
+            width: 206px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+          .text{
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            line-height: 14px;
+          }
+        }
+        .c_right{
+          .r_top {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+            }
+          }
+          .r_top:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .r_top:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .r_bottom {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            //margin-left: 17px;
+            margin-top: 17px;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              //position: absolute;
+              //padding: 0 20px;
+              //bottom: 0;
+              //box-sizing: border-box;
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .r_bottom:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .r_bottom:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+    .container3{
+      width: 1200px;
+      height: 364px;
+      display:flex;
+      padding-left: 75px;
+      padding-top: 50px;
+      .left3{
+        width: 225px;
+        background: url("../img/Android.png")no-repeat;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          //margin-left: 20px;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        p{
+          display: block;
+          margin-top: 0;
+          font-size: 12px;
+          line-height: 28px;
+          color: #fff;
+          width: 184px;
+          height: 28px;
+          overflow: hidden;
+          a{
+            color: #063;
+            display: block;
+          }
+          a:hover{
+            color: green;
+          }
+        }
+        span{
+          font-size: 16px;
+          line-height: 16px;
+          display: block;
+          margin-top: 20px ;
+          margin-bottom: 52px;
+          font-weight: bold;
+          .item{
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          a{
+            color: #fff;
+          }
+          a:hover .item{
+            margin-left: 5px;
+          }
+        }
+      }
+      .right3{
+        width: 228px;
+        margin-left: 17px;
+        .r_top {
+          box-shadow: 0 0  10px rgba(0,0,0,0.2);
+          cursor: pointer;
+          //margin-left: 17px;
+          //margin-top: 27px;
+          width: 224px;
+          //height: 172px;
+          background: white;
+          overflow: hidden;
+          //border: 1px solid #d9dde1;
+          display: block;
+          .tu {
+            height: 130px;
+            overflow: hidden;
+            .intro {
+              box-sizing: border-box;
+              position: relative;
+              padding: 0 20px 0 18px;
+              transition: top .5s;
+              top: -40px;
+              overflow: hidden;
+              height: 144px;
+              width: 100%;
+              background-image: url(../img/bg-course.png);
+              h3 {
+                margin: 0;
+                padding: 18px 0 6px;
+                font-size: 15px;
+                max-height: 40px;
+                overflow: hidden;
+                color: #07111b;
+                line-height: 21px;
+                .span3{
+                  float: left;
+                  margin-top: 2px;
+                  margin-right: 4px;
+                  padding: 2px;
+                  font-size: 12px;
+                  color: #fff;
+                  line-height: 12px;
+                  border-radius: 1px;
+                  background-color: #93999f;
+                }
+              }
+              p {
+                font-size: 12px;
+                //padding: 0 -2px 4px;
+                color: #787d82;
+              }
+            }
+          }
+          .pic_bottom {
+            width: 100%;
+            height: 234px;
+            z-index: 999;
+            background-color: #fff;
+            color: #93999f;
+            font-size: 12px;
+            line-height: 36px;
+            //box-shadow: 30px;
+            .l {
+              //color: red;
+              margin-left: 23px;
+            }
+            .list{
+              padding-top: 11px;
+              border-top: 1px solid #d9dde1;
+              font-size: 12px;
+              line-height: 30px;
+              width: 184px;
+              margin: auto;
+              //position: relative;
+              padding-left: 15px;
+              background: #fff;
+              a{
+                color: #07111b;
+                display: block;
+              }
+              a:hover{
+                color: red;
+              }
+            }
+          }
+        }
+        .r_top:hover .intro {
+          top: -90px;
+          position: relative;
+        }
+        .r_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+      }
+      .content3{
+        width: 712px;
+        //background: saddlebrown;
+        .c1_top{
+          background: url("../img/23.jpg")no-repeat;
+          width: 712px;
+          height: 172px;
+          p{
+            text-align: center;
+            line-height: 172px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+          }
+        }
+        .c1_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+        .c1_bottom{
+          margin-top: 18px;
+          .c1_1 {
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  //font-weight: normal;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              .l {
+                margin-left: 23px;
+              }
+            }
+          }
+          .c1_1:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .c1_1:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .c1_2 {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .c1_2:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .c1_2:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .c1_3 {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .c1_3:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .c1_3:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+    .container4{
+      width: 1200px;
+      height: 364px;
+      display:flex;
+      padding-left: 75px;
+      padding-top: 50px;
+      .left4{
+        width: 225px;
+        background: url("../img/iOS.png")no-repeat;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          //margin-left: 20px;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        p{
+          display: block;
+          font-size: 12px;
+          line-height: 28px;
+          color: #fff;
+          width: 184px;
+          height: 28px;
+          overflow: hidden;
+          a{
+            color: #066;
+            display: block;
+          }
+          a:hover{
+            color: #006999;
+          }
+        }
+        span{
+          font-size: 14px;
+          display: block;
+          margin-top: 20px ;
+          margin-bottom: 52px;
+          line-height: 12px;
+          color: #fff;
+          a{
+            color: #fff;
+          }
+          a:hover .item{
+            margin-left: 5px;
+          }
+        }
+      }
+      .right4{
+        width: 228px;
+        .r_top {
+          box-shadow: 0 0  10px rgba(0,0,0,0.2);
+          cursor: pointer;
+          //margin-left: 17px;
+          //margin-top: 27px;
+          width: 224px;
+          //height: 172px;
+          background: white;
+          overflow: hidden;
+          //border: 1px solid #d9dde1;
+          display: block;
+          .tu {
+            height: 130px;
+            overflow: hidden;
+            .intro {
+              box-sizing: border-box;
+              position: relative;
+              padding: 0 20px 0 18px;
+              transition: top .5s;
+              top: -40px;
+              overflow: hidden;
+              height: 144px;
+              width: 100%;
+              background-image: url(../img/bg-course.png);
+              h3 {
+                margin: 0;
+                padding: 18px 0 6px;
+                font-size: 15px;
+                max-height: 40px;
+                overflow: hidden;
+                color: #07111b;
+                line-height: 21px;
+                .span3{
+                  float: left;
+                  margin-top: 2px;
+                  margin-right: 4px;
+                  padding: 2px;
+                  font-size: 12px;
+                  color: #fff;
+                  line-height: 12px;
+                  border-radius: 1px;
+                  background-color: #93999f;
+                }
+              }
+              p {
+                font-size: 12px;
+                //padding: 0 -2px 4px;
+                color: #787d82;
+              }
+            }
+          }
+          .pic_bottom {
+            width: 100%;
+            height: 234px;
+            z-index: 999;
+            background-color: #fff;
+            color: #93999f;
+            font-size: 12px;
+            line-height: 36px;
+            //box-shadow: 30px;
+            .l {
+              //color: red;
+              margin-left: 23px;
+            }
+            .list{
+              padding-top: 11px;
+              border-top: 1px solid #d9dde1;
+              font-size: 12px;
+              line-height: 30px;
+              width: 184px;
+              margin: auto;
+              //position: relative;
+              padding-left: 15px;
+              background: #fff;
+              a{
+                color: #07111b;
+                display: block;
+              }
+              a:hover{
+                color: red;
+              }
+            }
+          }
+        }
+        .r_top:hover .intro {
+          top: -90px;
+          position: relative;
+        }
+        .r_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+
+      }
+      .content4{
+        //background: greenyellow;
+        width: 727px;
+        .c_left{
+          width: 468px;
+          height: 366px;
+          float: left;
+          .l_top{
+            height: 172px;
+            background: url("../img/14.jpg")no-repeat;
+          }
+          .l_top:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .l_bottom{
+            height: 172px;
+            margin-top: 20px;
+            background: url("../img/15.jpg")no-repeat;
+          }
+          .l_bottom:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          p{
+            line-height: 172px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+          }
+        }
+        .c_right{
+          //float: left;
+
+          .r_top {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              //position: absolute;
+              //padding: 0 20px;
+              //bottom: 0;
+              //box-sizing: border-box;
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .r_top:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .r_top:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+          .r_bottom {
+            margin-left: 17px;
+            box-shadow: 0 0  10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            //margin-left: 17px;
+            margin-top: 17px;
+            width: 224px;
+            height: 172px;
+            background: white;
+            overflow: hidden;
+            float: left;
+            border: 1px solid #d9dde1;
+            display: block;
+            .tu {
+              height: 130px;
+              overflow: hidden;
+              .intro {
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 20px 0 18px;
+                transition: top .5s;
+                top: -40px;
+                overflow: hidden;
+                height: 144px;
+                width: 100%;
+                background-image: url(../img/bg-course.png);
+                h3 {
+                  margin: 0;
+                  padding: 18px 0 6px;
+                  font-size: 15px;
+                  max-height: 40px;
+                  overflow: hidden;
+                  color: #07111b;
+                  line-height: 21px;
+                  .span3{
+                    float: left;
+                    margin-top: 2px;
+                    margin-right: 4px;
+                    padding: 2px;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 12px;
+                    border-radius: 1px;
+                    background-color: #93999f;
+                  }
+                }
+                p {
+                  font-size: 12px;
+                  //padding: 0 -2px 4px;
+                  color: #787d82;
+                }
+              }
+            }
+            .pic_bottom {
+              //position: absolute;
+              //padding: 0 20px;
+              //bottom: 0;
+              //box-sizing: border-box;
+              width: 100%;
+              height: 42px;
+              z-index: 999;
+              background-color: #fff;
+              color: #93999f;
+              font-size: 12px;
+              line-height: 36px;
+              //box-shadow: 30px;
+              .l {
+                //color: red;
+                margin-left: 23px;
+              }
+
+            }
+          }
+          .r_bottom:hover .intro {
+            top: -90px;
+            position: relative;
+          }
+          .r_bottom:hover{
+            box-shadow: 0 0  25px rgba(0,0,0,0.5);
+          }
+        }
+      }
+    }
+    .container5{
+      margin-top: 50px;
+      .c5_1 {
+        width: 204px;
+        height: 172px;
+        background: url("../img/Linux.png");
+        float: left;
+        border: 1px solid #d9dde1;
+        display: block;
+        margin-left: 75px;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        span{
+          font-size: 16px;
+          line-height: 16px;
+          display: block;
+          margin-top: 18px ;
+          font-weight: bold;
+          .item{
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          a{
+            color: #fff;
+          }
+          a:hover .item{
+            margin-left: 5px;
+          }
+        }
+        }
+      .c5_2 {
+        margin-left: 17px;
+        box-shadow: 0 0  10px rgba(0,0,0,0.2);
+        cursor: pointer;
+        width: 224px;
+        height: 172px;
+        background: white;
+        overflow: hidden;
+        float: left;
+        border: 1px solid #d9dde1;
+        display: block;
+        .tu {
+          height: 130px;
+          overflow: hidden;
+          .intro {
+            box-sizing: border-box;
+            position: relative;
+            padding: 0 20px 0 18px;
+            transition: top .5s;
+            top: -40px;
+            overflow: hidden;
+            height: 144px;
+            width: 100%;
+            background-image: url(../img/bg-course.png);
+            h3 {
+              margin: 0;
+              padding: 18px 0 6px;
+              font-size: 15px;
+              max-height: 40px;
+              overflow: hidden;
+              color: #07111b;
+              line-height: 21px;
+              .span3{
+                float: left;
+                margin-top: 2px;
+                margin-right: 4px;
+                padding: 2px;
+                font-size: 12px;
+                color: #fff;
+                line-height: 12px;
+                border-radius: 1px;
+                background-color: #93999f;
+              }
+            }
+            p {
+              font-size: 12px;
+              //padding: 0 -2px 4px;
+              color: #787d82;
+            }
+          }
+        }
+        .pic_bottom {
+          width: 100%;
+          height: 42px;
+          z-index: 999;
+          background-color: #fff;
+          color: #93999f;
+          font-size: 12px;
+          line-height: 36px;
+          //box-shadow: 30px;
+          .l {
+            //color: red;
+            margin-left: 23px;
+          }
+
+        }
+      }
+      .c5_2:hover .intro {
+        top: -90px;
+        position: relative;
+      }
+      .c5_2:hover{
+        box-shadow: 0 0  25px rgba(0,0,0,0.5);
+      }
+      .c5_3 {
+         margin-left: 17px;
+         box-shadow: 0 0  10px rgba(0,0,0,0.2);
+         cursor: pointer;
+         width: 224px;
+         height: 172px;
+         background: white;
+         overflow: hidden;
+         float: left;
+         border: 1px solid #d9dde1;
+         display: block;
+         .tu {
+           height: 130px;
+           overflow: hidden;
+           .intro {
+             box-sizing: border-box;
+             position: relative;
+             padding: 0 20px 0 18px;
+             transition: top .5s;
+             top: -40px;
+             overflow: hidden;
+             height: 144px;
+             width: 100%;
+             background-image: url(../img/bg-course.png);
+             h3 {
+               margin: 0;
+               padding: 18px 0 6px;
+               font-size: 15px;
+               max-height: 40px;
+               overflow: hidden;
+               color: #07111b;
+               line-height: 21px;
+               .span3{
+                 float: left;
+                 margin-top: 2px;
+                 margin-right: 4px;
+                 padding: 2px;
+                 font-size: 12px;
+                 color: #fff;
+                 line-height: 12px;
+                 border-radius: 1px;
+                 background-color: #93999f;
+               }
+             }
+             p {
+               font-size: 12px;
+               //padding: 0 -2px 4px;
+               color: #787d82;
+             }
+           }
+         }
+         .pic_bottom {
+           width: 100%;
+           height: 42px;
+           z-index: 999;
+           background-color: #fff;
+           color: #93999f;
+           font-size: 12px;
+           line-height: 36px;
+           //box-shadow: 30px;
+           .l {
+             //color: red;
+             margin-left: 23px;
+           }
+
+         }
+       }
+      .c5_3:hover .intro {
+        top: -90px;
+        position: relative;
+      }
+      .c5_3:hover{
+        box-shadow: 0 0  25px rgba(0,0,0,0.5);
+      }
+      .c5_4 {
+        margin-left: 17px;
+        box-shadow: 0 0  10px rgba(0,0,0,0.2);
+        cursor: pointer;
+        width: 224px;
+        height: 172px;
+        background: white;
+        overflow: hidden;
+        float: left;
+        border: 1px solid #d9dde1;
+        display: block;
+        .tu {
+          height: 130px;
+          overflow: hidden;
+          .intro {
+            box-sizing: border-box;
+            position: relative;
+            padding: 0 20px 0 18px;
+            transition: top .5s;
+            top: -40px;
+            overflow: hidden;
+            height: 144px;
+            width: 100%;
+            background-image: url(../img/bg-course.png);
+            h3 {
+              margin: 0;
+              padding: 18px 0 6px;
+              font-size: 15px;
+              max-height: 40px;
+              overflow: hidden;
+              color: #07111b;
+              line-height: 21px;
+              .span3{
+                float: left;
+                margin-top: 2px;
+                margin-right: 4px;
+                padding: 2px;
+                font-size: 12px;
+                color: #fff;
+                line-height: 12px;
+                border-radius: 1px;
+                background-color: #93999f;
+              }
+            }
+            p {
+              font-size: 12px;
+              //padding: 0 -2px 4px;
+              color: #787d82;
+            }
+          }
+        }
+        .pic_bottom {
+          width: 100%;
+          height: 42px;
+          z-index: 999;
+          background-color: #fff;
+          color: #93999f;
+          font-size: 12px;
+          line-height: 36px;
+          //box-shadow: 30px;
+          .l {
+            //color: red;
+            margin-left: 23px;
+          }
+
+        }
+      }
+      .c5_4:hover .intro {
+        top: -90px;
+        position: relative;
+      }
+      .c5_4:hover{
+        box-shadow: 0 0  25px rgba(0,0,0,0.5);
+      }
+      .c5_5 {
+        margin-left: 17px;
+        box-shadow: 0 0  10px rgba(0,0,0,0.2);
+        cursor: pointer;
+        width: 224px;
+        height: 172px;
+        background: white;
+        overflow: hidden;
+        float: left;
+        border: 1px solid #d9dde1;
+        display: block;
+        .tu {
+          height: 130px;
+          overflow: hidden;
+          .intro {
+            box-sizing: border-box;
+            position: relative;
+            padding: 0 20px 0 18px;
+            transition: top .5s;
+            top: -40px;
+            overflow: hidden;
+            height: 144px;
+            width: 100%;
+            background-image: url(../img/bg-course.png);
+            h3 {
+              margin: 0;
+              padding: 18px 0 6px;
+              font-size: 15px;
+              max-height: 40px;
+              overflow: hidden;
+              color: #07111b;
+              line-height: 21px;
+              .span3{
+                float: left;
+                margin-top: 2px;
+                margin-right: 4px;
+                padding: 2px;
+                font-size: 12px;
+                color: #fff;
+                line-height: 12px;
+                border-radius: 1px;
+                background-color: #93999f;
+              }
+            }
+            p {
+              font-size: 12px;
+              //padding: 0 -2px 4px;
+              color: #787d82;
+            }
+          }
+        }
+        .pic_bottom {
+          width: 100%;
+          height: 42px;
+          z-index: 999;
+          background-color: #fff;
+          color: #93999f;
+          font-size: 12px;
+          line-height: 36px;
+          //box-shadow: 30px;
+          .l {
+            //color: red;
+            margin-left: 23px;
+          }
+
+        }
+      }
+      .c5_5:hover .intro {
+        top: -90px;
+        position: relative;
+      }
+      .c5_5:hover{
+        box-shadow: 0 0  25px rgba(0,0,0,0.5);
+      }
+    }
+    .container6{
+      clear: both;
+      width: 1200px;
+      height: 364px;
+      display:flex;
+      padding-left: 75px;
+      padding-top: 50px;
+      .left6{
+        width: 225px;
+        background: url("../img/shoujileft.png")no-repeat;
+        padding-left: 20px;
+        h2{
+          font-size: 32px;
+          line-height: 36px;
+          color: #fff;
+          //margin-left: 20px;
+          font-weight: 700;
+          margin-top: 28px;
+        }
+        span{
+          font-size: 14px;
+          display: block;
+          margin-top: 20px ;
+          margin-bottom: 52px;
+          line-height: 12px;
+          color: #fff;
+        }
+        .btn{
+          border: 1px solid #fff;
+          border-radius: 3px;
+          height: 34px;
+          line-height: 34px;
+          font-size: 14px;
+          color: #fff;
+          text-align: center;
+          margin-bottom: 8px;
+          width: 184px;
+        }
+      }
+      .right6{
+        margin-left: 17px;
+        width: 468px;
+        //background: red;
+        .r_top{
+          height: 172px;
+          background: url("../img/37.jpg")no-repeat;
+        }
+        .r_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+        .r_bottom{
+          height: 172px;
+          margin-top: 20px;
+          background: white;
+          .rbt_left{
+            float: left;
+            width: 82px;
+            margin: 32px;
+            height: 60px;
+            font-size: 20px;
+            color: #07111b;
+            line-height: 20px;
+            font-weight: 700;
+          }
+          .rbt_right{
+            float: right;
+            margin-right: 32px;
+            text-align: left;
+            width: 290px;
+            margin-top: 35px;
+            a{
+              font-size: 14px;
+              line-height: 10px;
+              color: #07111b;
+              font-weight: 400;
+              display: block;
+            }
+            a:hover{
+              color: red;
+            }
+          }
+        }
+        .r_bottom:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+        p{
+          line-height: 172px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700;
+          color: white;
+        }
+      }
+      .content6{
+        //background: greenyellow;
+        width: 468px;
+        height: 366px;
+        .l_top{
+          height: 172px;
+          background: url("../img/36.jpg")no-repeat;
+        }
+        .l_top:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+        .l_bottom{
+          height: 172px;
+          margin-top: 20px;
+          background:white;
+          .bt_left{
+            float: left;
+            width: 82px;
+            margin: 32px;
+            height: 60px;
+            font-size: 20px;
+            color: #07111b;
+            line-height: 20px;
+            font-weight: 700;
+          }
+          .bt_right{
+            float: right;
+            margin-right: 32px;
+            text-align: left;
+            width: 290px;
+            margin-top: 35px;
+            a{
+              font-size: 14px;
+              line-height: 10px;
+              color: #07111b;
+              font-weight: 400;
+              display: block;
+            }
+            a:hover{
+              color: red;
+            }
+          }
+        }
+        .l_bottom:hover{
+          box-shadow: 0 0  25px rgba(0,0,0,0.5);
+        }
+        p{
+          line-height: 172px;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 700;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.footer{
+  height: 193px;
+  background: white;
+  .foot_top{
+    padding-top: 30px;
+    height: 32px;
+    //position: absolute;
+    //background: red;
+    a{
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      background: aqua;
+      background: url("../img/idx-btm.png")no-repeat;
+      margin: 0 9px;
+    }
+    .a1{
+      margin-left: 575px;
+      background-position: 0 -221px;
+    }
+    .a1:hover{
+      background-position: 0 -262px;
+    }
+    .a2{
+      background-position: -52px -221px;
+      .erweima2{
+        position:absolute;
+        top: 3700px;
+        left: 558px;
+        width: 165px;
+        height: 210px;
+        overflow: hidden;
+        display: none;
+      }
+    }
+    .a2:hover{
+      background-position: -52px -262px;
+      .erweima2{
+        display: block;
+      }
+    }
+    .a2:hover .erweima{
+      display: block;
+    }
+    .a3{
+      background-position: -104px -221px;
+    }
+    .a3:hover{
+      background-position: -104px -262px;
+    }
+    .a4{
+      background-position: -156px -221px;
+    }
+    .a4:hover{
+      background-position: -156px -262px;
+    }
+    .erweima{
+      width: 170px;
+      height: 215px;
+      background: url("../img/idx-btm.png");
+      position: relative;
+      left: 558px;
+      bottom: 255px;
+      z-index: 444;
+      display: none;
+    }
+  }
+  .foot_list{
+    padding-bottom: 40px;
+    ul{
+      margin: 30px 0 0  400px;
+    }
+    li{
+      float: left;
+      a{
+        margin: 0 10px;
+        color: #99a1a6;
+        font-size: 14px;
+      }
+      a:hover{
+        color: red;
+      }
+    }
+  }
+  .foot_bottom{
+    clear: both;
+    text-align: center;
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    //background: saddlebrown;
+    border-top: 1px solid #d0d6d9;
+    margin: 10px  75px;
+    padding-top: 20px;
+    p{
+      text-align: center;
+      color: #b4bbbf;
+      font-size: 12px;
+    }
+  }
+}
